@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/go/src/github.com/kunci115/myproject
+    expose:
+      - "8080"
+    ports:
+      - 8080:8080
